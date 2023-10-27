@@ -6,4 +6,4 @@ pillow
 tensorflow-serving-api==2.5.0
 matplotlib
 numpy
-typing-extensions==4.0.1
+typing-extensions>=4.7.1
