@@ -27,7 +27,7 @@ async def ping():
     return "Hello, I am Alive"
 
 
-MODEL = tf.keras.models.load_model("../models/2")
+MODEL = tf.keras.models.load_model("../models/1")
 
 CLASS_NAMES = ["Early Blight", "Late Blight", "Healthy"]
 def read_file_as_image(data) -> np.ndarray:
