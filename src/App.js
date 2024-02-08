@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import NavBar from './NavBar';
+import DragDropFiles from './component/DragDropFiles';
+import { BrowserRouter as Router, Switch, Route, Routes } from "react-router-dom";
+import Main from './component/main';
+import About from './component/About';
+import ModelDisciption from './component/ModelDesciption'
 function App() {
   return (
+  
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   
+ <Router>
+      <div className="App-nav">
+      
+        <NavBar />
+      
+        </div>
+      <Routes>
+          <Route path="/" exact element={<DragDropFiles/>}/>
+          <Route path="/about"  element={<About/>} />
+          <Route path="/shop" element={<ModelDisciption/>} />
+      </Routes>
+      
+    </Router>
+   
+    
+      
     </div>
   );
 }

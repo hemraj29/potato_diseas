@@ -1,0 +1,19 @@
+h2 {
+    color: rgb(42, 111, 12);
+}
+
+
+.main {
+    margin: 7px;
+    padding: 30px;
+   
+   
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+h1 {
+    color: rgb(220, 34, 17);
+}

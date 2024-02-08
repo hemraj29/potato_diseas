@@ -1,0 +1,35 @@
+
+.navbar {
+     display: flex;
+    justify-content: space-around;
+    font-style: none;
+  
+   background-color: green;
+   opacity: 1;
+}
+
+
+ .nav-links{
+
+    width: 40%;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+ }
+ span{
+  color: white;
+ }
+
+ ul {
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   list-style: none;
+ }
+ button {
+   margin: 0;
+ }
+ img 
+ {
+   width: 70px;
+   height: 90px;
+   border-radius: 6px;
+ }
